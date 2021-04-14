@@ -20,7 +20,7 @@ get_header();
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-6">
           <!-- <img class="img-fluid header-logo" src="img/mazowieckie.svg"> -->
-          <h1 class="text-uppercase font-weight-bold">Mazowiecki Rejestr Nowotworówwwwwwwwwwwwwwwwwwwww</h1>
+          <h1 class="text-uppercase font-weight-bold">Mazowiecki Rejestr Nowotworów</h1>
           <!-- <hr class="divider my-4"> -->
         </div>
         <div class="col-lg-6">
