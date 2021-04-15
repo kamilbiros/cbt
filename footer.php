@@ -67,7 +67,27 @@
   <script src="<?php bloginfo('stylesheet_directory')?>/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="<?php bloginfo('stylesheet_directory')?>/js/creative.min.js"></script>
+  <script src="<?php bloginfo('stylesheet_directory')?>/js/creative.js"></script>
+  <script type="text/javascript">
+  	$('body').scrollspy({
+    target: '#navbar-page',
+    offset: 75
+  });
+
+  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("#navbar-page").offset().top > 100) {
+      $("#navbar-page").addClass("navbar-scrolled");
+    } else {
+      $("#navbar-page").removeClass("navbar-scrolled");
+    }
+  };
+   // Collapse now if page is not at top
+  navbarCollapse();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
+</script>
+
 
 </body>
 </html>

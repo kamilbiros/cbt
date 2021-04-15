@@ -8,10 +8,13 @@
  */
 
 ?>
+
+
 <?php
 	if (! is_front_page() ) :
 ?>
 <section class="page-section" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 <?php
 	else :
 ?>
@@ -43,9 +46,21 @@
 			</div>
 		</div>
 
-		<div class="entry-content">
+		<div class="entry-content" id="navbar-page">
 			<div class="row justify-content-center">
-				<div class="col-md-10">
+				<div class="col-md-2">
+					<nav class="navbar sticky-top">
+						<a class="navbar-brand" href="#">Navbar</a>
+						<nav class="nav nav-pills flex-column">
+							<a class="nav-link js-scroll-trigger" data-target="#history" href="#history">Historia</a>
+							
+							<a class="nav-link js-scroll-trigger" data-target="#activity" href="#activity">Działalność</a>
+							<a class="nav-link js-scroll-trigger" data-target="#team" href="#team">Zespół</a>			
+						</nav>
+					</nav>
+				</div>
+				<div class="col-md-10" id="content">
+
 					<?php
 					the_content();
 

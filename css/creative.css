@@ -9752,3 +9752,8 @@ header img.header-logo{
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+.nav-page{
+  top: 6rem;
+
+}

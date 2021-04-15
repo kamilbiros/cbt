@@ -31,7 +31,6 @@
 	<!-- Theme CSS - Includes Bootstrap -->
 	<link href="<?php bloginfo('stylesheet_directory')?>/css/creative.css" rel="stylesheet">
 
-
 	<?php wp_head(); ?>
 </head>
 
