@@ -57,8 +57,8 @@
 					<nav class="navbar sticky-top" id="navbar-page">
 						<a class="navbar-brand" href="#">Nawigacja</a>
 						<nav class="nav nav-pills flex-column">
+							<a class="nav-link js-scroll-trigger" data-target="#informations" href="#informations">Informacje</a>
 							<a class="nav-link js-scroll-trigger" data-target="#team" href="#team">Zespół</a>
-							
 							<a class="nav-link js-scroll-trigger" data-target="#publications" href="#publications">Publikacje Naukowe</a>
 							<a class="nav-link js-scroll-trigger" data-target="#projects" href="#projects">Projekty Badawcze</a>			
 						</nav>
