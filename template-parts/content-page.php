@@ -46,19 +46,27 @@
 			</div>
 		</div>
 
-		<div class="entry-content" id="navbar-page">
+		<div class="entry-content">
 			<div class="row justify-content-center">
+
+				<?php
+					if (! is_front_page() ) :
+				?>
+
 				<div class="col-md-2">
-					<nav class="navbar sticky-top">
-						<a class="navbar-brand" href="#">Navbar</a>
+					<nav class="navbar sticky-top" id="navbar-page">
+						<a class="navbar-brand" href="#">Nawigacja</a>
 						<nav class="nav nav-pills flex-column">
-							<a class="nav-link js-scroll-trigger" data-target="#history" href="#history">Historia</a>
+							<a class="nav-link js-scroll-trigger" data-target="#team" href="#team">Zespół</a>
 							
-							<a class="nav-link js-scroll-trigger" data-target="#activity" href="#activity">Działalność</a>
-							<a class="nav-link js-scroll-trigger" data-target="#team" href="#team">Zespół</a>			
+							<a class="nav-link js-scroll-trigger" data-target="#publications" href="#publications">Publikacje Naukowe</a>
+							<a class="nav-link js-scroll-trigger" data-target="#projects" href="#projects">Projekty Badawcze</a>			
 						</nav>
 					</nav>
 				</div>
+				<?php
+					endif;
+				?>
 				<div class="col-md-10" id="content">
 
 					<?php
