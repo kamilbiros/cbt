@@ -77,10 +77,10 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-  margin: 0.5rem !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  padding-top: 4rem; 
   margin-top: 0.5rem;
   margin-bottom: 3rem;
 }
@@ -9608,7 +9608,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 #mainNav {
@@ -9627,7 +9627,7 @@ hr.light {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0.75rem 0;
 }
 
@@ -9697,22 +9697,22 @@ header img.header-logo{
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 95vh;
+    height: auto;
     min-height: 40rem;
     padding-top: 72px;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
   header.masthead p {
     font-size: 1.15rem;
   }
   header.masthead h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 
@@ -9767,8 +9767,8 @@ header img.header-logo{
   color:#333;
 }
 #navbar-page a.active{
-  border-left: 2px solid #01A3A4;
-  color: #01A3A4;
+  border-left: 2px solid #6159e6;
+  color: #6159e6;
   border-radius: 0;
   background: transparent;
   padding: 0.25rem 1rem;
@@ -9784,10 +9784,14 @@ section#onas{
   position: absolute;
   left: 0;
   bottom:0;
-  height: 2vw;
+  height: 3vw;
   width: 100%;
   fill: #f2f6fc;
 }
 section, header{
   position: relative;
 }
+p.link-word-wrap{
+  word-wrap: break-word;
+}
+

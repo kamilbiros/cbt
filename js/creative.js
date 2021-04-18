@@ -55,4 +55,31 @@
     }
   });
 
+  // ----- custom Table for Wordpress ---------
+
+  $('table').each(function(){
+    var table = $(this);
+    table.addClass("table");
+  });
+
+  $('figure.wp-block-table').each(function(){
+    var table = $(this);
+    table.addClass("table-responsive");
+  });
+
+   $('a').each(function(){
+    var link = $(this);
+    link.parent().addClass("link-word-wrap");
+  });
+
+  $('.publications-box a').each(function(){ // FIRST ADD DIV with class="publications-box" and put everthing inside
+    var link = $(this);
+    link.after("<hr/>");
+  });
+
+
+  // -----eof custom Table for Wordpress ---------
+
+  
+
 })(jQuery); // End of use strict

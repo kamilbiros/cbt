@@ -16,8 +16,8 @@ get_header();
 ?>
 
 <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center text-center">
+    <div class="container h-auto">
+      <div class="row h-auto align-items-center justify-content-center text-center">
         <div class="col-lg-6">
           <img class="img-fluid header-logo" src="<?php bloginfo('stylesheet_directory')?>/img/logo_gliwice.png">
           <h1 class="text-uppercase font-weight-bold">Centrum Badań Translacyjnych i&nbsp;Biologii Molekularnej Nowotworów</h1>
