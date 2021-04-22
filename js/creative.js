@@ -1,6 +1,29 @@
 (function($) {
   "use strict"; // Start of use strict
 
+
+// tworzenie menu bocznego
+    $(':header[id]').each(function(){
+    var headerWithId = $(this);
+    var navbar = $('#sidebar-nav');
+    if(headerWithId.length > 0){
+      if( headerWithId[0].localName == "h1"){
+        navbar.append('<a class="nav-link js-scroll-trigger lead" data-target="#'+headerWithId[0].id+'" href="#'+headerWithId[0].id+'">'+headerWithId[0].innerText+'</a>');
+      }
+      else if(headerWithId[0].localName == "h2" ){
+        console.log(headerWithId);
+        navbar.append('<a class="nav-link js-scroll-trigger header2" data-target="#'+headerWithId[0].id+'" href="#'+headerWithId[0].id+'">'+headerWithId[0].innerText+'</a>');
+      }
+      else if(headerWithId[0].localName == "h3") {
+        console.log(headerWithId);
+        navbar.append('<a class="nav-link js-scroll-trigger header3" data-target="#'+headerWithId[0].id+'" href="#'+headerWithId[0].id+'">'+headerWithId[0].innerText+'</a>');
+      }
+      
+    }
+  });
+
+
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -81,6 +104,9 @@
     var button = $(this);
     button.removeClass().addClass('btn btn-primary');
   });
+
+
+
 
 
   // -----eof custom Table for Wordpress ---------

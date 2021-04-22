@@ -9772,7 +9772,7 @@ header img.header-logo{
   color: #6159e6;
   border-radius: 0;
   background: transparent;
-  padding: 0.25rem 1rem;
+  padding: 0 calc(1rem - 2px);
 }
 #navbar-page a{
   color:#333;
@@ -9801,4 +9801,10 @@ p.link-word-wrap{
 
 input[type="search"]{
   padding: 0.375rem 0.75rem;
+}
+
+.header3{
+  margin-left: 10px;
+  font-size: 0.825rem;
+
 }
