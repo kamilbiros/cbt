@@ -77,6 +77,11 @@
     link.after("<hr/>");
   });
 
+  $('#search-box input[type="submit"]').each(function(){ // FIRST ADD DIV with class="publications-box" and put everthing inside
+    var button = $(this);
+    button.removeClass().addClass('btn btn-primary');
+  });
+
 
   // -----eof custom Table for Wordpress ---------
 

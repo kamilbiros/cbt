@@ -198,7 +198,7 @@ select,
 textarea {
 	font-family: inherit; /* 1 */
 	font-size: 100%; /* 1 */
-	line-height: 1.15; /* 1 */
+	line-height: 1.5; /* 1 */
 	margin: 0; /* 2 */
 }
 
@@ -514,7 +514,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
+/*button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -527,7 +527,7 @@ input[type="submit"] {
 	font-size: 0.75rem;
 	line-height: 1;
 	padding: .6em 1em .4em;
-}
+}*/
 
 button:hover,
 input[type="button"]:hover,
@@ -565,7 +565,7 @@ textarea {
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
-	padding: 3px;
+	/*padding: 3px;*/
 }
 
 input[type="text"]:focus,
