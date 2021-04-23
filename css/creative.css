@@ -9760,19 +9760,21 @@ header img.header-logo{
 
 #navbar-page{
   top: 6rem;
+  border-right:1px solid rgba(0,0,0,0.1);
 }
 #navbar-page .navbar-brand{
   font-weight: 700;
 }
 #navbar-page a{
   color:#333;
+  padding: 0.3rem 1rem;
 }
 #navbar-page a.active{
   border-left: 2px solid #6159e6;
   color: #6159e6;
   border-radius: 0;
   background: transparent;
-  padding: 0 calc(1rem - 2px);
+  padding: 0.3rem calc(1rem - 2px);
 }
 #navbar-page a{
   color:#333;
@@ -9795,12 +9797,13 @@ section, header{
 p.link-word-wrap{
   word-wrap: break-word;
 }
-#search-box{
-  padding: 0 10px;
-}
 
-input[type="search"]{
-  padding: 0.375rem 0.75rem;
+
+@media (min-width: 992px) {
+  #search-box{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .header3{

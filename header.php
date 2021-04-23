@@ -32,6 +32,9 @@
 	<link href="<?php bloginfo('stylesheet_directory')?>/css/creative.css" rel="stylesheet">
 
 	<?php wp_head(); ?>
+	<a class="sr-only sr-only-focusable" href="#mainNav">Przejdź do menu głównego.</a>
+	<a class="sr-only sr-only-focusable" href="#navbar-page">Przejdź do nawigacji strony.</a>
+	<a class="sr-only sr-only-focusable" href="#content">Przejdź do treści strony.</a>
 </head>
 
 <body id="page-top" <?php body_class(); ?>>
@@ -55,8 +58,21 @@
 			?>
 
 
-		  <div id="search-box"><?php get_search_form(); ?></div>
-		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		  <div id="search-box"><?php 
+		  // get_search_form(); 
+		  ?>
+		  	<form role="search" method="get" class="search-form" action="<?php echo get_site_url(); ?>">
+				<div class="input-group">
+					<input type="search" value="" name="s" class="form-control" placeholder="Szukaj..." aria-label="Szukaj..." aria-describedby="basic-addon2">
+						<span class="sr-only" id="szukaj_description">Wpisz szukaną frazę</span>
+						<div class="input-group-append">
+						<button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+			</form>
+		  	
+		  </div>
+		  <button class="navbar-toggler navbar-toggler-right float-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 

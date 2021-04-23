@@ -48,14 +48,10 @@
 
 		<div class="entry-content">
 			<div class="row justify-content-center">
-
-				
-
-				<div class="col-md-2">
+				<div class="d-none d-lg-block col-md-2">
 					<nav class="navbar sticky-top" id="navbar-page">
 						<a class="navbar-brand">Nawigacja</a>
-						<nav class="nav nav-pills flex-column" id="sidebar-nav">
-										
+						<nav class="nav nav-pills flex-column" id="sidebar-nav">					
 						</nav>
 					</nav>
 				</div>
