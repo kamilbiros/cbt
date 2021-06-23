@@ -66,7 +66,7 @@
 					<input type="search" value="" name="s" class="form-control" placeholder="Szukaj..." aria-label="Szukaj..." aria-describedby="basic-addon2">
 						<span class="sr-only" id="szukaj_description">Wpisz szukaną frazę</span>
 						<div class="input-group-append">
-						<button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+						<button class="btn btn-primary" type="submit"><i class="fas fa-search"></i><span class="sr-only">Szukaj</span></button>
 					</div>
 				</div>
 			</form>

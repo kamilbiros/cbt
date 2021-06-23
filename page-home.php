@@ -16,19 +16,19 @@ get_header();
 ?>
 
 <header class="masthead">
-    <div class="container h-auto">
-      <div class="row h-auto align-items-center justify-content-center text-center">
+    <div class="container h-100">
+      <div class="row align-items-center justify-content-center text-center">
         <div class="col-lg-6">
-          <img class="img-fluid header-logo" src="<?php bloginfo('stylesheet_directory')?>/img/logo_gliwice.png">
+          
           <h1 class="text-uppercase font-weight-bold">Centrum Badań Translacyjnych i&nbsp;Biologii Molekularnej Nowotworów</h1>
           <!-- <hr class="divider my-4"> -->
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid" src="<?php bloginfo('stylesheet_directory')?>/img/header.svg">
+          <img class="img-fluid header-logo" alt="logo narodowego instytutu onkologii w gliwicach"src="<?php bloginfo('stylesheet_directory')?>/img/logo_gliwice.png">
         </div>
         <div class="col-lg-8 align-self-baseline">
           <!-- <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p> -->
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#onas">Dowiedz się więcej...</a>
+          <a class="btn btn-primary btn-xl mt-5 js-scroll-trigger" href="#onas">Dowiedz się więcej...</a>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'mbrn' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Nic nie znaleziono', 'mbrn' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -34,9 +34,18 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'mbrn' ); ?></p>
+			<p><?php esc_html_e( 'Przykro nam, ale nie znaleziono pasujących wyników. Proszę spróbować jeszcze raz, wpisując inną frazę.', 'mbrn' ); ?></p>
+			<form role="search" method="get" class="search-form" action="<?php echo get_site_url(); ?>">
+				<div class="input-group">
+					<input type="search" value="" name="s" class="form-control" placeholder="Szukaj..." aria-label="Szukaj..." aria-describedby="basic-addon2">
+						<span class="sr-only" id="szukaj_description">Wpisz szukaną frazę</span>
+						<div class="input-group-append">
+						<button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+			</form>
 			<?php
-			get_search_form();
+			// get_search_form();
 
 		else :
 			?>
